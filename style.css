@@ -147,3 +147,27 @@ label {
     color: white;
     float: right;
 }
+
+#user {
+    width: 400px;
+    color: white;
+    padding-left: 700px;
+}
+
+#us {
+    background-color: blue;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+}
+
+
+#deconnect {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5%;
+}

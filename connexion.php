@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+foreach ($_SESSION['users'] as $user) {
+    echo " Bienvenue sur E-TaxiBOKKO" . " " . $user['nom'] . " " . $user['prenom'];
+}
+
+if (isset($_POST['deconnect'])) {
+    session_unset();
+    session_destroy();
+    header('location:inscription.php');
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +25,13 @@
 </head>
 
 <body>
+    <br>
+    <br>
+    <br>
+    <form action="" method="post">
+        <input type="submit" name="deconnect" id="deconnect" value="Deconnexion">
 
-
-
-    <h1> Bienvenue sur E-TaxiBOKKO</h1>
-
-
-
-
+    </form>
 
 </body>
 
